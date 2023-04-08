@@ -8,11 +8,13 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        //       int[][] array = new int[][]{{1, 0, 1, 1},
-//                                    {0, 1, 1, 1},
-//                                    {1, 1, 1, 1},
-//                                    {1, 1, 1, 1}, {1, 1, 1, 1}
-        //  };
+               int[][] array = new int[][]{
+                       {1, 0, 1, 1},
+                       {0, 1, 1, 1},
+                       {1, 1, 1, 1},
+                       {1, 1, 1, 1},
+                       {1, 1, 1, 1}
+               };
 //        int num = 8;
 //        System.out.println(meArg(array, num));
 //        System.out.println(newArr(new int[]{1, 2, 3}, num));
@@ -21,7 +23,9 @@ public class Main {
 //        System.out.println(newArr(array, -4));
 //        System.out.println(newArr(array, 8));
 
-        System.out.println(Arrays.toString(sumArr(new int[]{1,2,3,3,4,5,6,7}, new int[]{7,6,5,4,3,2,1})));
+        System.out.println(Arrays.toString(sumArr(
+                new int[]{1,2,3,3,4,5,6,7},
+                new int[]{7,6,5,4,3,2,1})));
         //  System.out.println(sumBinArr(array));
     }
 
