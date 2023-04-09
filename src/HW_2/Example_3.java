@@ -3,7 +3,7 @@ package HW_2;
 import java.util.Arrays;
 
 public class Example_3 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         int a = 90;
         int b = 3;
@@ -23,7 +23,7 @@ public class Example_3 {
         }
     }
 
-    public static void printSum(Integer a, Integer b) {//Экономичнее: public static void printSum(int a, int b)
+    public static void printSum(Integer a, Integer b) {
         System.out.println(a + b);
     }
 
