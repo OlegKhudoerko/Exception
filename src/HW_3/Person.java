@@ -50,7 +50,6 @@ public class Person {
                 System.out.println("Выход");
                 return;
             }
-
             if (fields.length != REQUIRED_FIELDS_COUNT) {
                 System.err.println("Ошибка: неверное количество полей");
                 err = false;
@@ -74,7 +73,6 @@ public class Person {
                 firstName = fields[1];
                 middleName = fields[2];
             }
-
             if (err) {
                 birthDate = null;
                 try {
@@ -85,13 +83,11 @@ public class Person {
                 }
             }
             if (err) {
-
                 phoneNumber = 0;
                 try {
                     if (!fields[4].matches("\\d{1,15}")) {
                         throw new NumberFormatException("Ошибка: неверный формат номера телефона");
                     } else {
-
                         phoneNumber = Long.parseLong(fields[4]);
                     }
                 } catch (NumberFormatException e) {
@@ -108,10 +104,8 @@ public class Person {
                     gender = fields[5].charAt(0);
                 }
             }
-
             if (err) {
                 Person userData = new Person(lastName, firstName, middleName, birthDate, phoneNumber, gender);
-
                 try {
                     userData.writeToFile();
                 } catch (IOException e) {
